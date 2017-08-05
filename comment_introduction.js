@@ -1,25 +1,14 @@
+// single-line comment
+
 /* 
-The Random Number Guessing Game
-Generates a number between 1 and 6
-and gives the player two attempts to 
-guess the number.
+	This is a multi-line comment.
+	Everything is ignored until we close the comment.
+	Yo.
 */
 
-// start with an incorrect (unmade) guess
 var correctGuess = false;
-
-// generate the random int between 1-6
 var randomNumber = Math.floor(Math.random() * 6 ) + 1;
-
-// prompt the user to guess a number
 var guess = prompt('I am thinking of a number between 1 and 6. What is it?');
-
-/* 
-test to see if the player's guess is:
-1. correct
-2. guessed too high
-3. guessed too low
-*/
 
 if ( parseInt(guess) === randomNumber ) {
 	correctGuess = true;
@@ -40,7 +29,7 @@ if ( parseInt(guess) === randomNumber ) {
 
 }
 
-// test if the player guessed correctly and display the final message
+
 if ( correctGuess ) {
 	document.write('<p>You guessed the number!</p>');
 } else {
